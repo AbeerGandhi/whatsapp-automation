@@ -1,0 +1,44 @@
+Why WhatsApp Automation with Selenium Cannot Run on iOS
+
+1. No Browser Automation Support:
+   - iOS does not allow running Selenium WebDriver or ChromeDriver.
+   - Selenium requires desktop browsers (Chrome, Firefox) with WebDriver support, which iOS browsers do not have.
+   - Mobile Safari and other iOS browsers don’t expose automation hooks needed for Selenium.
+
+2. No Access to Desktop WhatsApp Web on iOS:
+   - WhatsApp Web is designed for desktop browsers.
+   - Mobile browsers either redirect to WhatsApp app or limit WhatsApp Web functionality.
+   - WhatsApp Web on iOS is not fully functional and does not support automation.
+
+3. No Execution of Background Scripts:
+   - iOS apps run in sandboxed environments with strict security.
+   - Running scripts that control other apps (like WhatsApp) or automate UI clicks is not allowed.
+   - Apps cannot launch and control other apps’ UI automatically.
+
+4. No Support for ChromeDriver or Similar:
+   - ChromeDriver and other browser drivers are desktop executables.
+   - iOS cannot run these executables due to its OS architecture and app restrictions.
+
+Why Desktop WhatsApp App Cannot Auto-Type Messages
+
+1. WhatsApp Desktop App Security:
+   - WhatsApp desktop app does not provide an API for sending messages programmatically.
+   - It is designed to prevent automated message sending to avoid spam and misuse.
+
+2. Lack of Automation Hooks:
+   - Unlike WhatsApp Web, desktop app does not expose web elements that can be controlled via Selenium.
+   - Automation tools must use complex UI automation frameworks (e.g., AutoHotkey, AppleScript) that depend on OS.
+
+3. Manual User Interaction Required:
+   - To send messages, user must manually interact with the UI.
+   - This prevents bots from sending messages automatically.
+
+Summary:
+- iOS cannot run Selenium or ChromeDriver, making your current automation code incompatible.
+- WhatsApp Web automation requires desktop browsers.
+- WhatsApp Desktop app lacks APIs and automation hooks for programmatically sending messages.
+- On iOS, the best you can do is open WhatsApp app with a pre-filled message and let the user manually send it.
+
+
+FUTURE SCOPE:
+add direct contacts so that no need for long numbers saying 

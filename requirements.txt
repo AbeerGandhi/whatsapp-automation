@@ -1,0 +1,8 @@
+SpeechRecognition
+pyttsx3
+pyaudio
+selenium
+urllib3
+requests
+pypiwin32
+pywin32
