@@ -7,8 +7,7 @@ This is a simple desktop voice assistant built with Python. It uses voice comman
 - Voice-based interaction using `speech_recognition`
 - Text-to-speech using `pyttsx3`
 - WhatsApp message automation via Selenium
-- Easy to use via GUI or CLI
-- Packaged into `.exe` for easy sharing
+- Easy to use
 
 ##  Requirements
 
